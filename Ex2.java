@@ -142,13 +142,68 @@ class Ex2_000 extends Ex{
 	}
 }
 
+class Ex2_7 extends Ex{
+	void execute(){
+		Random rand = new Random();
+
+		int luchy = rand.nextInt(9) + 1;	    
+                int aiueo = rand.nextInt(9) - 10;
+                int ka = rand.nextInt(90) + 11;
+		System.out.println("１桁の正の整数値 " + luchy + " です。");
+                System.out.println("１桁の負の整数値 " + aiueo + " です。");
+                System.out.println("２桁の正の整数値 " + ka + " です。");
+	}
+}
+
+class Ex2_8 extends Ex{
+	void execute(){
+                Scanner stdIn = new Scanner(System.in);
+
+                System.out.println("整数値を入力してください。");
+                int x = stdIn.nextInt();
+		Random rand = new Random();
+
+		int luchy = rand.nextInt(11) -6 ;	   
+		System.out.println("入力した整数値にランダム-5~5を加えた結果 "+( x + luchy) + " です。");
+	}
+}
+
+
+class Ex2_9 extends Ex{
+	void execute(){
+		Random rand = new Random();
+
+                double tekitou = rand.nextDouble();
+
+		int luchy = rand.nextInt(10);	
+                int aiueo = rand.nextInt(2);
+                
+		System.out.println("0.0以上1.0未満の実数値をランダムに生成して表示 :" + tekitou);
+                System.out.println("0.0以上10.0未満の実数値をランダムに生成して表示 :"+ (luchy + tekitou));
+                System.out.println("-1.0以上1.0未満の実数値をランダムに生成して表示 :" + (aiueo + tekitou -1));
+	}
+}
+
+class Ex2_10 extends Ex{
+        void execute(){
+               Scanner stdIn = new Scanner(System.in);
+
+               System.out.println("姓: ");
+               String sei = stdIn.next();
+               System.out.println("名: ");
+               String namae = stdIn.next();
+
+               System.out.println("こんにちは"+ sei + namae + "さん。");
+        }
+}
+
 public class Ex2 {
 	public static void main(String[] args){
 		Ex a;
 
 	//	a = new Ex2_0();
         //       a.execute();
-		a = new Ex2_00();
+	/*	a = new Ex2_00();
                 a.execute();
                 a = new Ex2_3();
                 a.execute();
@@ -157,11 +212,19 @@ public class Ex2 {
                 a = new Ex2_5();
                 a.execute();
                 a = new Ex2_6();
-                a.execute();
+                a.execute();      */
 
-	/*	a = new Ex2_000();
-		a.execute();
-                a = new Ex2_1();
+	//	a = new Ex2_000();
+	//	a.execute();
+                a = new Ex2_7();
+                a.execute();
+                a = new Ex2_8();
+                a.execute();
+                a = new Ex2_9();
+                a.execute();
+                a = new Ex2_10();
+                a.execute();
+      /*          a = new Ex2_1();
                 a.execute();
                 a = new Ex2_2();
                 a.execute();    */
