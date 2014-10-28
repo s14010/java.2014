@@ -147,8 +147,8 @@ class Ex2_7 extends Ex{
 		Random rand = new Random();
 
 		int luchy = rand.nextInt(9) + 1;	    
-                int aiueo = rand.nextInt(9) - 10;
-                int ka = rand.nextInt(90) + 11;
+                int aiueo = rand.nextInt(9) - 9;
+                int ka = rand.nextInt(90) + 10;
 		System.out.println("１桁の正の整数値 " + luchy + " です。");
                 System.out.println("１桁の負の整数値 " + aiueo + " です。");
                 System.out.println("２桁の正の整数値 " + ka + " です。");
@@ -163,7 +163,7 @@ class Ex2_8 extends Ex{
                 int x = stdIn.nextInt();
 		Random rand = new Random();
 
-		int luchy = rand.nextInt(11) -6 ;	   
+		int luchy = rand.nextInt(11) -5 ;	   
 		System.out.println("入力した整数値にランダム-5~5を加えた結果 "+( x + luchy) + " です。");
 	}
 }
