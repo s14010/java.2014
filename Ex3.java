@@ -1,26 +1,45 @@
-import java.util.Scanner;
+class Ex3{
 
-abstract class Ex {
-	abstract void execute();
-}
+	public String ex3_0(int n){
 
-class Ex3_0 extends Ex{
-	void execute(){
-		Scanner stdIn = new Scanner(System.in);
+		return "dummy";
 
-		System.out.print("整数値：");
-		int n = stdIn.nextInt();
+	}
 
-		if(n > 0){
-			System.out.println("その値は正です。");
-		}
+	public int ex3_1(int n){
+		
+		return -1;
+
+	}
+
+	public String ex3_2(int a, int b){
+
+		return "dummy";
+	}
+
+	public String ex3_3(int a, int b){
+
+		return "dummy";
+
+	}
+
+	public String ex3_4(int a){
+
+		return "dummy";
+
+	}
+
+	public String ex3_5(int a){
+
+		return "dummy";
+	}
+	
+	public String ex3_6(int a){
+		return "dummy";
+	}
+
+	public String ex3_7(int a){
+		return "dummy";
 	}
 }
 
-public class Ex3 {
-	public static void main(String[] args){
-		Ex a;
-		a = new Ex3_0();
-		a.execute();
-	}
-}
