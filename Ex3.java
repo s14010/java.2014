@@ -25,9 +25,9 @@ class Ex3{
 
 	public String ex3_3(int a, int b){
           if(a > b){
-          return a + "のほうが大きいです";
+          return a + "の方が大きいです";
           }else if(a < b){
-          return b + "のほうが大きいです";
+          return b + "の方が大きいです";
           }else{
           return "同じ値です";
           }
@@ -36,34 +36,68 @@ class Ex3{
 	}
 
 	public String ex3_4(int a){
-
-		return "dummy";
+          if(a < 0){
+          return "正でない整数値です";
+          }else if(a % 5 ==0){
+          return "その値は5で割り切れます";
+          }else{
+          return "その値は5で割り切れません";
+          }
 
 	}
 
 	public String ex3_5(int a){
-
-		return "dummy";
+          if(a % 10 ==0){
+          return "その値は10の倍数です";
+          }else if(a < 0){
+          return "正でない整数値です";
+          }else{
+          return "その値は10の倍数ではありません";
+          }
 	}
 	
 	public String ex3_6(int a){
-		return "dummy";
+          if(a < 0){
+          return "正でない整数値です";
+          }else if(a % 3 ==0){
+          return "その値は3で割り切れます";
+          }else if(a % 3 == 1){
+          return "その値を3で割った余りは1です";
+          }else{
+          return "その値を3で割った余りは2です";
+          }
 	}
 
 	public String ex3_7(int a){
-		return "dummy";
+          if(a > 100){
+          return "範囲(0～100)外の値です";
+          }else if(a >= 80){
+          return "優";
+          }else if(a >= 70){
+          return "良";
+          }else if(a >= 60){
+          return "可";
+          }else if(a < 0){
+          return "範囲(0～100)外の値です";
+          }else{
+          return "不可";
+          }
 	}
 
 	public double ex3_8(double a, double b){
-		return -1.0;
+	 return Math.max(a,b);
 	}
 
 	public int ex3_9(int a, int b){
-		return 0;
+	  return Math.abs(a-b);
 	}
 
 	public String ex3_10(int a, int b){
-		return "dummy";
+	  if(Math.abs(a-b) >= 11){
+          return "それらの差は11以上です";
+          }else{
+          return "それらの差は10以下です";
+          }
 	}
 }
 
