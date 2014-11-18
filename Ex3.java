@@ -99,5 +99,17 @@ class Ex3{
           return "それらの差は10以下です";
           }
 	}
+
+	public int ex3_11(int a, int b, int c){
+		return 1000;
+	}
+
+	public int ex3_12(int a, int b, int c){
+		return 1000;
+	}
+
+	public String ex3_13(int a){
+		return "dummy";
+	}
 }
 

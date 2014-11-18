@@ -319,6 +319,153 @@ public class Ex3Test {
 		String actual = ex3.ex3_10(-1,-11);
 		assertThat(actual, is(expected));
 	}
+	@Test
+	public void ex3_11_1(){
+		Ex3 ex3 = new Ex3();
+		int expected = -1;
+		int actual = ex3.ex3_11(1, 0, -1);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_11_2(){
+		Ex3 ex3 = new Ex3();
+		int expected = -3;
+		int actual = ex3.ex3_11(-1, -2, -3);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_11_3(){
+		Ex3 ex3 = new Ex3();
+		int expected = 0;
+		int actual = ex3.ex3_11(0, 0, 1);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_11_4(){
+		Ex3 ex3 = new Ex3();
+		int expected = -1;
+		int actual = ex3.ex3_11(-1, -1, 0);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_11_5(){
+		Ex3 ex3 = new Ex3();
+		int expected = 10000;
+		int actual = ex3.ex3_11(10000, 100000, 10001);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_12_1(){
+		Ex3 ex3 = new Ex3();
+		int expected = 2;
+		int actual = ex3.ex3_12(1, 2, 3);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_12_2(){
+		Ex3 ex3 = new Ex3();
+		int expected = 0;
+		int actual = ex3.ex3_12(0, 0, -1);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_12_3(){
+		Ex3 ex3 = new Ex3();
+		int expected = -2;
+		int actual = ex3.ex3_12(-1, -2, -3);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_12_4(){
+		Ex3 ex3 = new Ex3();
+		int expected = 0;
+		int actual = ex3.ex3_12(0, 0, 0);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_12_5(){
+		Ex3 ex3 = new Ex3();
+		int expected = -1;
+		int actual = ex3.ex3_12(-1, -2, 0);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_1(){
+		Ex3 ex3 = new Ex3();
+		String expected = "冬";
+		String actual = ex3.ex3_13(12);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_2(){
+		Ex3 ex3 = new Ex3();
+		String expected = "冬";
+		String actual = ex3.ex3_13(2);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_3(){
+		Ex3 ex3 = new Ex3();
+		String expected = "春";
+		String actual = ex3.ex3_13(3);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_4(){
+		Ex3 ex3 = new Ex3();
+		String expected = "春";
+		String actual = ex3.ex3_13(5);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_5(){
+		Ex3 ex3 = new Ex3();
+		String expected = "夏";
+		String actual = ex3.ex3_13(6);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_6(){
+		Ex3 ex3 = new Ex3();
+		String expected = "夏";
+		String actual = ex3.ex3_13(8);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_7(){
+		Ex3 ex3 = new Ex3();
+		String expected = "秋";
+		String actual = ex3.ex3_13(9);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_8(){
+		Ex3 ex3 = new Ex3();
+		String expected = "秋";
+		String actual = ex3.ex3_13(11);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_9(){
+		Ex3 ex3 = new Ex3();
+		String expected = "範囲(1～12)外の値です";
+		String actual = ex3.ex3_13(0);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_10(){
+		Ex3 ex3 = new Ex3();
+		String expected = "範囲(1～12)外の値です";
+		String actual = ex3.ex3_13(-1);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex3_13_11(){
+		Ex3 ex3 = new Ex3();
+		String expected = "範囲(1～12)外の値です";
+		String actual = ex3.ex3_13(13);
+		assertThat(actual, is(expected));
+	}
 
 	// エントリーポイント
 	public static void main(String[] args){
